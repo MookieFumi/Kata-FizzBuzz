@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
-using Xunit;
+﻿using Xunit;
 
 namespace FizzBuzz
 {
-    public class UnitTest1
+    public class FizzBuzzShould
     {
         [Fact]
         public void TestMethod1()
