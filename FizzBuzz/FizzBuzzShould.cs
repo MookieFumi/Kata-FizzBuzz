@@ -20,6 +20,14 @@ namespace FizzBuzz
             string result = fizzBuzz.Translate(3);
             result.Should().Be("fizz");
         }
+
+        [Fact]
+        public void return_buzz_when_param_is_divisible_by_5()
+        {
+            var fizzBuzz = new FizzBuzz();
+            string result = fizzBuzz.Translate(5);
+            result.Should().Be("buzz");
+        }
     }
 
     public class FizzBuzz
@@ -29,6 +37,10 @@ namespace FizzBuzz
             if (number % 3 == 0)
             {
                 return "fizz";
+            }
+            if (number % 5 == 0)
+            {
+                return "buzz";
             }
             return number.ToString();
         }
