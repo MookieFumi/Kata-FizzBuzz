@@ -69,7 +69,12 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Impl\FizzBuzz.cs" />
+    <Compile Include="Impl\FizzBuzzRuleFactory.cs" />
+    <Compile Include="Impl\FizzBuzzRule.cs" />
     <Compile Include="FizzBuzzShould.cs" />
+    <Compile Include="Impl\IFizzBuzzRuleFactory.cs" />
+    <Compile Include="Impl\MatchingCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
