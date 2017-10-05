@@ -1,11 +1,13 @@
-﻿namespace FizzBuzz.Impl
+﻿using System;
+
+namespace FizzBuzz.Impl
 {
     public class FizzBuzzRule
     {
-        public MatchingCondition MatchingCondition { get; }
+        public Func<int, bool> MatchingCondition { get; }
         public string Translation { get; }
 
-        public FizzBuzzRule(MatchingCondition matchingCondition, string translation)
+        public FizzBuzzRule(Func<int, bool> matchingCondition, string translation)
         {
             MatchingCondition = matchingCondition;
             Translation = translation;
